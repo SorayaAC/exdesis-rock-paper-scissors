@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Routing from './app/router/routing';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import './app/assets/styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
