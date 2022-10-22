@@ -11,6 +11,7 @@ export const Home = () => {
     const player = {
       name: playerName,
       score: 0,
+      highScore: 0,
     };
 
     const players = persistenceStorage.get('players');
@@ -33,7 +34,7 @@ export const Home = () => {
   };
 
   return (
-    <div>
+    <>
       <h1>Introduce jugador</h1>
       <form onSubmit={sendPlayer}>
         <input
@@ -43,7 +44,7 @@ export const Home = () => {
         />
         <button>Enviar</button>
       </form>
-    </div>
+    </>
   );
 };
 
