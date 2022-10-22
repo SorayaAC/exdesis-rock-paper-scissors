@@ -10,8 +10,8 @@ export const Game = () => {
   const [playerChoice, setPlayerChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
   const [result, setResult] = useState(null);
-  const [playerScore, setPlayerScore] = useState(player?.score);
-  const [computerScore, setComputerScore] = useState(0);
+  // const [playerScore, setPlayerScore] = useState(player?.score);
+  // const [computerScore, setComputerScore] = useState(0);
   const choices = [
     'Piedra', 'Papel', 'Tijeras', 'Lagarto', 'Spock'];
 
