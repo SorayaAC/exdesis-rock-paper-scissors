@@ -5,7 +5,7 @@ import Header from '../components/header';
 export const Game = () => {
   const playerList = persistenceStorage.get('players');
   const loggedPlayer = persistenceStorage.get('loggedPlayer');
-  const player = playerList?.find(({ name }) => name === loggedPlayer);
+  // const player = playerList?.find(({ name }) => name === loggedPlayer);
 
   const [playerChoice, setPlayerChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
@@ -70,16 +70,16 @@ export const Game = () => {
           default: 
            setResult('');      
   }
-}, [playerChoice, computerChoice, playerScore, computerScore]);
+}, [playerChoice, computerChoice]);
 
   return (
     <>
       <Header /> 
       <main>
       <h1>Piedra, Papel, Tijera, Lagarto, Spock</h1>
-      <p>Puntos jugador: {playerScore} </p>
+      <p>Puntos jugador:  </p>
       <p>Jugador: {playerChoice}</p>
-      <p>Puntos ordenador: {computerScore} </p>
+      <p>Puntos ordenador:  </p>
       <p>Ordenador: {computerChoice}</p>
       <button onClick={() => handlePlayerChoice('Piedra')}>Piedra</button>
       <button onClick={() => handlePlayerChoice('Papel')}>Papel</button>
