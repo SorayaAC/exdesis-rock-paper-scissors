@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Rock Paper & Scissors Game",
+  "scope": "/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +20,9 @@
     }
   ],
   "start_url": ".",
+  "display_overrride":[ "standalone", "fullscreen"],
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
