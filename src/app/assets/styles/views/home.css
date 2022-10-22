@@ -1,10 +1,11 @@
 
 
 .home_container {
-    /* background-color: yellow; */
+    /* background-color: yellow;  */
     display: flex;
 	flex-direction: column;
 	align-items: center;
+    height: 100vh;
 
 }
 .home_form {
@@ -18,7 +19,7 @@
     height: 30px;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px;
 }
 
@@ -27,12 +28,13 @@
     height: 30px;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid white;
+    color: white;
     font-weight: bold;
     cursor: pointer;
 }
 .home_img_container {
+    top: 50px;
     position: relative;
     width: 1.5em;
     height: 1.5em;
@@ -61,10 +63,9 @@
     border: 4px solid #03e9f4;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px #03e9f4;
-    transform: rotate(270deg) translate(6em) rotate(-270deg);
     position: relative;
-    top: 22px;
-    right: 27px;
+    top: 27px;
+    right: 54px;
 }
 .home_img_paper {
     width: 40px;
@@ -75,10 +76,9 @@
     border: 4px solid #03e9f4;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px #03e9f4;
-    transform: translate(6em);
     position: relative;
-    bottom: 40px;
-    right: 73px;
+    bottom: 97px;
+    left: 33px;
 }
 .home_img_rock {
     width: 40px;
@@ -89,10 +89,9 @@
     border: 4px solid #03e9f4;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px #03e9f4;
-    transform: rotate(45deg) translate(6em) rotate(-45deg);
     position: relative;
-    bottom: 230px;
-    right: 38px;
+    bottom: 193px;
+    right: 23px;
 }
 .home_img_scissors {
     width: 40px;
@@ -103,10 +102,9 @@
     border: 4px solid #03e9f4;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px #03e9f4;
-    transform: rotate(135deg) translate(6em) rotate(-135deg);
     position: relative;
-    bottom: 272px;
-    right: 5px;
+    bottom: 149px;
+    left: 14px;
 }
 .home_img_spock {
     width: 40px;
@@ -117,10 +115,9 @@
     border: 4px solid #03e9f4;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px #03e9f4;
-    transform: rotate(225deg) translate(6em) rotate(-225deg);
     position: relative;
-    bottom: 135px;
-    left: 26px;
+    bottom: 270px;
+    right: 74px;
 }
 @media screen and (min-width: 480px) {
     .home_container {
