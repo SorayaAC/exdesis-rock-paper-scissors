@@ -12,7 +12,6 @@ export const Home = () => {
     const player = {
       name: playerName,
       score: 0,
-      highScore: 0,
     };
 
     const players = persistenceStorage.get('players');
@@ -37,27 +36,24 @@ export const Home = () => {
   return (
     <div className="home_container">
       <h1>Introduce jugador</h1>
-      <form  className="home_form" onSubmit={sendPlayer}>
+      <form className="home_form" onSubmit={sendPlayer}>
         <input
-        className="home_form_input"
+          className="home_form_input"
           type="text"
           required
           onChange={(event) => setPlayerName(event.target.value)}
         />
-        <button 
-        className="home_form_btn" 
-        type="submit">
-        Enviar
+        <button className="home_form_btn" type="submit">
+          Enviar
         </button>
       </form>
-      <div className="home_img_container"> 
-      <div className="home_img_lizard"  />
-      <div className="home_img_paper"  />
-      <div className="home_img_rock"  />
-      <div className="home_img_scissors"  />
-      <div className="home_img_spock"  />
+      <div className="home_img_container">
+        <div className="home_img_lizard" />
+        <div className="home_img_paper" />
+        <div className="home_img_rock" />
+        <div className="home_img_scissors" />
+        <div className="home_img_spock" />
       </div>
-     
     </div>
   );
 };
