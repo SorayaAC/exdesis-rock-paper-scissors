@@ -1,0 +1,92 @@
+
+.game_container {
+      /* background-color: yellow;  */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+
+}
+.game_title { 
+        font-size: 18px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+.game_scoreboard_container {
+      /* background-color: red;  */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      padding: 0 20px;
+      box-sizing: border-box;
+}
+.game_scoreboard_player{
+        /* background-color: blue;  */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 113px  ;
+        height: 149px;
+        box-sizing: border-box;
+}
+
+.game_scoreboard_computer{
+    /* background-color: blue;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 113px  ;
+    height: 149px;
+    box-sizing: border-box;
+}
+.game_buttons_container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.game_buttons {
+    /* background-color: green;  */
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #03e9f4;
+    box-shadow: 0 0 20px #03e9f4;
+}
+.game_buttons_icon{
+    border-radius: 100%;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+   
+    
+}
+img {
+    width: 35px;
+    height: 35px;
+  
+}
+
+@media screen and (min-width: 480px) {
+    .home_container {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home_container {
+        background-color: red;
+    }
+}
+    
+@media screen and (min-width: 950px) {
+    .home_container {
+        background-color: blue;
+    }
+}

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import '.././assets/styles/views/game.css';
+import { gameOptions } from '../constants/gameOptions';
+
 import { persistenceStorage } from '../../services/persistenceStorage';
 import Header from '../components/header';
 
@@ -75,17 +78,35 @@ export const Game = () => {
   return (
     <>
       <Header /> 
-      <main>
-      <h1>Piedra, Papel, Tijera, Lagarto, Spock</h1>
-      <p>Puntos jugador:  </p>
+      <main className='game_container'>
+      <h1 className='game_title'>Piedra, Papel, Tijera, Lagarto, Spock</h1>
+      <div className='game_scoreboard_container'>
+      <div className='game_scoreboard_player'>
+      <p>{loggedPlayer}:  </p>
+     
+<img src={gameOptions.find((option) => option.name === playerChoice)?.icon} alt={playerChoice} />
+     
       <p>Jugador: {playerChoice}</p>
-      <p>Puntos ordenador:  </p>
+      </div>
+      
+      <div className='game_scoreboard_computer'>
+      <p>Ordenador:  </p>
+      <img src={gameOptions.find((option) => option.name === computerChoice)?.icon} alt={computerChoice} />
       <p>Ordenador: {computerChoice}</p>
-      <button onClick={() => handlePlayerChoice('Piedra')}>Piedra</button>
-      <button onClick={() => handlePlayerChoice('Papel')}>Papel</button>
-      <button onClick={() => handlePlayerChoice('Tijeras')}>Tijeras</button>
-      <button onClick={() => handlePlayerChoice('Lagarto')}>Lagarto</button>
-      <button onClick={() => handlePlayerChoice('Spock')}>Spock</button>
+      </div>
+      </div>
+<div className='game_buttons_container'> {gameOptions.map((btn, key) => (
+          <button
+          className='game_buttons'
+            key={key}
+            onClick={() => {
+              handlePlayerChoice(btn.name)
+              setPlayerChoice(btn.name)
+            }}
+          > <img className='game_buttons_icon' src={btn.icon} alt="" />
+          </button>
+        ))}</div>
+     
       <p>Resultado partida: {result}</p> 
       </main>
       

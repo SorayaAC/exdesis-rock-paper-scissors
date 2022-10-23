@@ -1,4 +1,6 @@
 import React from 'react';
+import '.././assets/styles/components/header.css';
+import logout from '.././assets/images/logout.svg'
 import { persistenceStorage } from '../../services/persistenceStorage';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,11 +14,11 @@ export const Header = () => {
   };
 
   return (
-    <header>
+    <header className='header_container'>
       <p>
         Jugador: <span>{loggedPlayer}</span>
       </p>
-      <button onClick={logOutPlayer}>Salir</button>
+      <button className="header_btn" onClick={logOutPlayer}><img src={logout} alt="x"/></button>
     </header>
   );
 };
