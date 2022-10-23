@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import '.././assets/styles/views/game.css';
 import { gameOptions } from '../constants/gameOptions';
