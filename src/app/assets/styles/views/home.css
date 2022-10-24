@@ -7,9 +7,9 @@
 .home_title {
     font-family: 'Spock-font';
     font-size: 3rem;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    text-shadow: 0 0 50px #03e9f4
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-shadow: 0 0 50px var(--spok-blue);
 }
 .home_form {
     display: flex;
@@ -37,7 +37,7 @@
     cursor: pointer;
     border: 4px solid #0000ff;
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     
 }
 .home_img_container {
@@ -48,8 +48,8 @@
     padding: 2.8em;
     border-radius: 100%;
     margin: 1.75em auto 0; 
-    border: 3px solid #0000ff;
-    box-shadow: 0 0 50px #03e9f4;
+    border: 3px solid var(--spok-blue);
+    box-shadow: 0 0 50px var(--spok-blue);
     animation: rotation 20s infinite linear;
 
 }
@@ -66,9 +66,9 @@
     height: 4em;
     background-image: url(../../images/lizard.svg);
     border-radius: 10em;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue);
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     top: 60px;
     right: 47px;
@@ -78,9 +78,9 @@
     height: 4em;
     background-image: url(../../images/paper.svg);
     border-radius: 10em;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue);
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     bottom: 88px;
     left: 81px;
@@ -90,9 +90,9 @@
     height: 4em;
     background-image: url(../../images/rock.svg);
     border-radius: 10em;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue);
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     bottom: 219px;
     left: 6px;
@@ -102,9 +102,9 @@
     height: 4em;
     background-image: url(../../images/scissors.svg);
     border-radius: 10em;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue);
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     bottom: 150px;
     left: 47px;
@@ -114,9 +114,9 @@
     height: 4em;
     background-image: url(../../images/spock.svg);
     border-radius: 10em;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue);
     background-repeat: no-repeat;
-    box-shadow: 0 0 20px #03e9f4;
+    box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     bottom: 317px;
     right: 66px;

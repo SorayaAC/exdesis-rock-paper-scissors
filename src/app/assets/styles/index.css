@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Spock-font';
+    src: url("../fonts/StarTrek_future.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+:root {
+    --spok-blue: #03e9f4;
+}
+
 * {
     background-color: black;
     color: aliceblue;
@@ -6,9 +17,5 @@
 }
 
 
-@font-face {
-    font-family: 'Spock-font';
-    src: url("../fonts/StarTrek_future.ttf") format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
+
+
