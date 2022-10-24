@@ -66,6 +66,7 @@
     height: max-content;
     padding: 0 10px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 .game_buttons {
    
@@ -118,8 +119,8 @@
        
     }
     .game_buttons {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         margin-top: 70px;
     }
 
