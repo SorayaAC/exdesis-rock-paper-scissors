@@ -35,9 +35,10 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border: 4px solid #0000ff;
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
+    font-size: 15px;
     
 }
 .home_img_container {
@@ -48,7 +49,7 @@
     padding: 2.8em;
     border-radius: 100%;
     margin: 1.75em auto 0; 
-    border: 3px solid var(--spok-blue);
+    border: 3px solid var(--spok-blue-deep);
     box-shadow: 0 0 50px var(--spok-blue);
     animation: rotation 20s infinite linear;
 
@@ -66,7 +67,7 @@
     height: 4em;
     background-image: url(../../images/lizard.svg);
     border-radius: 10em;
-    border: 4px solid var(--spok-blue);
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
@@ -78,7 +79,7 @@
     height: 4em;
     background-image: url(../../images/paper.svg);
     border-radius: 10em;
-    border: 4px solid var(--spok-blue);
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
@@ -90,7 +91,7 @@
     height: 4em;
     background-image: url(../../images/rock.svg);
     border-radius: 10em;
-    border: 4px solid var(--spok-blue);
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
@@ -102,7 +103,7 @@
     height: 4em;
     background-image: url(../../images/scissors.svg);
     border-radius: 10em;
-    border: 4px solid var(--spok-blue);
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
@@ -114,27 +115,18 @@
     height: 4em;
     background-image: url(../../images/spock.svg);
     border-radius: 10em;
-    border: 4px solid var(--spok-blue);
+    border: 4px solid var(--spok-blue-deep);
     background-repeat: no-repeat;
     box-shadow: 0 0 20px var(--spok-blue);
     position: relative;
     bottom: 317px;
     right: 66px;
 }
-@media screen and (min-width: 480px) {
-    .home_container {
-        background-color: green;
-    }
-}
+
 
 @media screen and (min-width: 768px) {
-    .home_container {
-        background-color: red;
+    .home_title {
+        font-size: 4rem;
     }
 }
     
-@media screen and (min-width: 950px) {
-    .home_container {
-        background-color: blue;
-    }
-}

@@ -80,19 +80,13 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-    .home_container {
-        background-color: green;
-    }
+  
 }
 
 @media screen and (min-width: 768px) {
-    .home_container {
-        background-color: red;
-    }
+   
 }
     
 @media screen and (min-width: 950px) {
-    .home_container {
-        background-color: blue;
-    }
+   
 }
