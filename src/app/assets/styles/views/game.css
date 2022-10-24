@@ -1,6 +1,4 @@
-
 .game_container {
-      /* background-color: yellow;  */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -9,18 +7,18 @@
 }
 .game_title { 
     font-family: 'Spock-font';
-    width: 80%;
+    width: fit-content;
     height: 100px;
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    text-shadow: 0 0 50px #03e9f4;
+    text-shadow: 0 0 50px var(--spok-blue);
     text-align: center;
     
 }
 
 .game_scoreboard_container {
-      /* background-color: red;  */
+     
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -62,8 +60,8 @@
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    border: 4px solid #03e9f4;
-    box-shadow: 0 0 20px #03e9f4;
+    border: 3px solid var(--spok-blue-deep);
+    box-shadow: 0 0 20px var(--spok-blue);
 }
 .game_buttons_icon{
     border-radius: 100%;
@@ -80,13 +78,24 @@ img {
 }
 
 @media screen and (min-width: 480px) {
+    .game_container {
+        background-color: green;
+  }
   
 }
 
 @media screen and (min-width: 768px) {
+    .game_container {
+       background-color: red;
+  
+  }
    
 }
     
 @media screen and (min-width: 950px) {
+    .game_container {
+        background-color: blue;
+  
+  }
    
 }
