@@ -15,11 +15,11 @@ export const Header = () => {
   return (
     <header className="header_container">
       <p>
-        <i class="fa-regular fa-hand-spock"></i> <span>{loggedPlayer}</span>
+        <i className="fa-regular fa-hand-spock"></i> <span>{loggedPlayer}</span>
       </p>
       <button className="header_btn" onClick={logOutPlayer}>
         {' '}
-        <i class="fa-solid fa-right-from-bracket"></i>
+        <i className="fa-solid fa-right-from-bracket"></i>
       </button>
     </header>
   );

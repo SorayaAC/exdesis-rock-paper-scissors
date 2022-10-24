@@ -91,26 +91,25 @@ export const Game = () => {
             </p>
 
             <img
+              className="game_scoreboard_img"
               src={
                 gameOptionsNull.find((option) => option.name === playerChoice)
                   ?.icon
               }
               alt={playerChoice}
             />
-
-            <p>Jugador: {playerChoice}</p>
           </div>
 
           <div className="game_scoreboard_computer">
-            <p>Ordenador: {computerScore} </p>
+            <p>CPU: {computerScore} </p>
             <img
+              className="game_scoreboard_img"
               src={
                 gameOptionsNull.find((option) => option.name === computerChoice)
                   ?.icon
               }
               alt={computerChoice}
             />
-            <p>Ordenador: {computerChoice}</p>
           </div>
         </div>
         <div className="game_buttons_container">
@@ -129,7 +128,9 @@ export const Game = () => {
             </button>
           ))}
         </div>
-        <p>{result}</p>
+        <div className="game_result_container">
+          <p className="game_result">{result}</p>
+        </div>
       </main>
       <Footer />
     </>
