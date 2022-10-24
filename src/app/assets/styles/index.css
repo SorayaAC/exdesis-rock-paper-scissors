@@ -2,4 +2,13 @@
     background-color: black;
     color: aliceblue;
     max-width: 1500px;
+    font-family: 'Roboto Mono', monospace;
 }
+
+
+@font-face {
+    font-family: 'Spock-font';
+    src: url("../fonts/StarTrek_future.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }

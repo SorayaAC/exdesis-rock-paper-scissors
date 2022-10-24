@@ -35,16 +35,18 @@ export const Home = () => {
 
   return (
     <div className="home_container">
-      <h1>Introduce jugador</h1>
+      <h1 className="home_title">Introduce jugador</h1>
       <form className="home_form" onSubmit={sendPlayer}>
+        <label htmlFor=""></label>
         <input
+          placeholder="Nombre"
           className="home_form_input"
           type="text"
           required
           onChange={(event) => setPlayerName(event.target.value)}
         />
         <button className="home_form_btn" type="submit">
-          Enviar
+          Entrar
         </button>
       </form>
       <div className="home_img_container">

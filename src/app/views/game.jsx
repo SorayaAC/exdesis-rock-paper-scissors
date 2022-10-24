@@ -5,6 +5,7 @@ import { gameOptions } from '../constants/gameOptions';
 import { gameOptionsNull } from '../constants/gameOptionsNull';
 import { persistenceStorage } from '../../services/persistenceStorage';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 export const Game = () => {
   const playerList = persistenceStorage.get('players');
@@ -82,7 +83,7 @@ export const Game = () => {
     <>
       <Header />
       <main className="game_container">
-        <h1 className="game_title">Piedra, Papel, Tijera, Lagarto, Spock</h1>
+        <h1 className="game_title">Piedra Papel Tijera Lagarto Spock</h1>
         <div className="game_scoreboard_container">
           <div className="game_scoreboard_player">
             <p>
@@ -128,9 +129,9 @@ export const Game = () => {
             </button>
           ))}
         </div>
-
         <p>{result}</p>
       </main>
+      <Footer />
     </>
   );
 };
